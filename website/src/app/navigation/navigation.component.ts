@@ -11,26 +11,17 @@ import { Observable } from 'rxjs';
 export class NavigationComponent implements OnInit {
 
   lists$: Observable<any>;
-  landing_page$: Object;
-
-  all_list$: Object;
-
-  constructor(private list_data_service: ListServiceService) { }
+  page_list_id = "";
+  constructor(private list_data_service: ListServiceService) { 
+    this.page_list_id = "";
+  }
 
   ngOnInit() {
     this.list_data_service.getMenuLists().subscribe(
       data => { 
-        console.log(data['sublists'])
         this.lists$ = data['sublists'];
+        this.page_list_id = this.lists$[0]['id'];
     });
-
-    this.list_data_service.getList('all').subscribe(
-      data => {
-        console.log(data['sublists'])
-        this.landing_page$ = data;
-        this.all_list$ = data['sublists'];
-    });
-
   }
 
 }

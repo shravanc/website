@@ -16,8 +16,6 @@ export class CarousalOneLayoutsComponent implements OnInit {
   ngOnInit() {
     this.list_data_service.getList(this.carousel_list_id).subscribe(
       data => {
-        console.log('----CarousalOneLayoutsComponent----')
-        console.log(data['items'])
         this.items$ = data['items'];
     });
 

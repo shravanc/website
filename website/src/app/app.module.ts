@@ -27,6 +27,8 @@ import { GalleryTwoComponent } from './gallery-two/gallery-two.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ListServiceComponent } from './list-service/list-service.component';
 import { FooterComponent } from './footer/footer.component';
+import { BodyComponent } from './body/body.component';
+import { WebsiteBodyComponent } from './website-body/website-body.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { FooterComponent } from './footer/footer.component';
     GalleryTwoComponent,
     NavigationComponent,
     ListServiceComponent,
-    FooterComponent
+    FooterComponent,
+    BodyComponent,
+    WebsiteBodyComponent
   ],
   imports: [
     BrowserModule,

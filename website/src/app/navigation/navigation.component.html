@@ -10,14 +10,56 @@
       </ul>
   </links>
 </mdb-navbar>
+<app-website-body *ngIf="page_list_id" [page_list_id]="page_list_id"></app-website-body>
 
+
+
+<app-footer></app-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <app-body [carousel_list_id]="list_id"></app-body> -->
 <!-- Main -->
-  <div *ngFor="let list of all_list$">
+  <!-- <div *ngFor="let list of all_list$">
 
     <div *ngIf="list.layouts[0]['title'] == 'carousal-one-layouts'">
-      {{list.name}}
       <app-carousal-one-layouts [carousel_list_id]="list.id"></app-carousal-one-layouts>
-    </div>
+    </div> -->
 
     <!-- <div *ngIf="list.layouts[0]['title'] == 'vertical-cards-layouts'">
         {{list.name}}
@@ -31,12 +73,11 @@
       <app-gallery-onet [carousel_list_id]="list.id"></app-gallery-one>
     </div> -->
 
-  </div>
+  <!-- </div> -->
 <!-- /.Main -->
 
 
 
 
-<app-footer></app-footer>
 
 
