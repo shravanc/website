@@ -17,7 +17,6 @@ export class GalleryOneComponent implements OnInit {
   ngOnInit() {
     this.list_data_service.getList(this.carousel_list_id).subscribe(
       data => {
-        console.log(data['items'])
         this.items$ = data['items'];
     });
   }

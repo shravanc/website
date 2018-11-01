@@ -27,8 +27,8 @@ import { GalleryTwoComponent } from './gallery-two/gallery-two.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ListServiceComponent } from './list-service/list-service.component';
 import { FooterComponent } from './footer/footer.component';
-import { BodyComponent } from './body/body.component';
 import { WebsiteBodyComponent } from './website-body/website-body.component';
+import { GalleryThreeComponent } from './gallery-three/gallery-three.component';
 
 @NgModule({
   declarations: [
@@ -54,8 +54,8 @@ import { WebsiteBodyComponent } from './website-body/website-body.component';
     NavigationComponent,
     ListServiceComponent,
     FooterComponent,
-    BodyComponent,
-    WebsiteBodyComponent
+    WebsiteBodyComponent,
+    GalleryThreeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ListServiceService } from '../list-service.service';
-import { Observable } from 'rxjs';
-
+import { List } from '../../models/list.model';
 
 @Component({
   selector: 'app-navigation',
@@ -10,17 +9,16 @@ import { Observable } from 'rxjs';
 })
 export class NavigationComponent implements OnInit {
 
-  lists$: Observable<any>;
-  page_list_id = "";
+  lists$: List[];
+  page_list_id = '';
   constructor(private list_data_service: ListServiceService) { 
-    this.page_list_id = "";
   }
 
   ngOnInit() {
     this.list_data_service.getMenuLists().subscribe(
       data => { 
         this.lists$ = data['sublists'];
-        this.page_list_id = this.lists$[0]['id'];
+        this.page_list_id = this.lists$[0].slug;
     });
   }
 

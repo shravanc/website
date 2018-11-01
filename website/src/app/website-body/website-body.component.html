@@ -4,14 +4,12 @@
       <app-carousal-one-layouts [carousel_list_id]="list.id"></app-carousal-one-layouts>
     </div>
 
-    <!-- <div *ngIf="list.layouts[0]['title'] == 'vertical-cards-layouts'">
-        {{list.name}}
-      <app-vertical-cards-layouts [carousel_list_id]="list.id"></app-vertical-cards-layouts>
+    <div *ngIf="list.layouts[0]['title'] == 'gallery-one'">
+      <app-gallery-one [carousel_list_id]="list.id"></app-gallery-one>
     </div>
 
-    <div *ngIf="list.layouts[0]['title'] == 'gallery-one'">
-        {{list.name}}
-      <app-gallery-onet [carousel_list_id]="list.id"></app-gallery-one>
-    </div> -->
+    <div *ngIf="list.layouts[0]['title'] == 'vertical-cards-layouts'">
+        <app-vertical-cards-layouts [carousel_list_id]="list.id"></app-vertical-cards-layouts>
+    </div>
 
-  </div>
+</div>

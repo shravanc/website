@@ -22,6 +22,7 @@ import { CarousalFourLayoutsComponent } from './carousal-four-layouts/carousal-f
 import { CarousalFiveLayoutsComponent } from './carousal-five-layouts/carousal-five-layouts.component';
 import { GalleryOneComponent } from './gallery-one/gallery-one.component';
 import { GalleryTwoComponent } from './gallery-two/gallery-two.component';
+import { GalleryThreeComponent } from './gallery-three/gallery-three.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 
@@ -97,6 +98,10 @@ const routes: Routes = [
   {
     path: 'gallery-two',
     component: GalleryTwoComponent
+  },
+  {
+    path: 'gallery-three',
+    component: GalleryThreeComponent
   },
   {
     path: 'login',
