@@ -24,12 +24,28 @@ import { GalleryOneComponent } from './gallery-one/gallery-one.component';
 import { GalleryTwoComponent } from './gallery-two/gallery-two.component';
 import { GalleryThreeComponent } from './gallery-three/gallery-three.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+
 
 
 const routes: Routes = [
   {
     path: '',
     component: NavigationComponent
+  },
+  {
+  path: 'login',
+  component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    path: 'forgot-password',
+    component: ForgotPasswordComponent
   },
   {
     path: 'zig-zag',
